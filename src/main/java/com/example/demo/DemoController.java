@@ -24,7 +24,7 @@ public class DemoController {
     @GetMapping("/id/{id}")
     public String userInfo(@PathVariable("id") Long id){
         Optional<BasicUser> basicUser = userRepository.findById(id);
-        return basicUser.map(user -> "Hello " + user.getName() + " to new world of possibilities")
-                .orElse("{\"message\":\"Hello guest to new world of possibilities\"");
+        return basicUser.map(user -> "{\"message\":\"Hello " + user.getName() + " to new world of possibilities\"}")
+                .orElse("{\"message\":\"Hello guest to new world of possibilities\"}");
     }
 }
