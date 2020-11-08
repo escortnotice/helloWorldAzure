@@ -3,11 +3,11 @@
 # API: 
 http://localhost:8090/id/1
 
-# install java
+# Install java
 sudo apt install default-jdk
 
-# uninstall java
+# Uninstall java
 sudo apt remove default-jdk
 
-# install maven in linux server
+# Install maven in linux server
 sudo apt install maven
